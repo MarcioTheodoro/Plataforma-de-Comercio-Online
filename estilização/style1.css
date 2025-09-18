@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+
+header{
+    height: 85px;
+    width: 100%;
+    background-color: rgb(251,86,48);
+
+    
+}
+
+header h1{
+    color: white;
+    font-size: 45px;
+    display: inline;
+    justify-content: space-between;
+}
+
+header h2{
+   display: inline;
+   margin-left: 1000px;
+   color: white;
+}
+
+
+header img{
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
+    display: inline;
+
+}
+
+.menu ul{
+    background-color: rgb(247, 114, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    
+}
+
+.menu ul li a:hover{
+    font-weight: bold;
+    color: rgb(251,86,48);
+    background-color: white;
+}
+
+body{
+    background-color: rgb(184, 184, 184);
+}
+
+.bloco-principal{
+    background-color: white;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 1000px;
+    
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+}
+
+.bloco-principal h3{
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(251,86,48);
+}
+
+
+
+.bloco{
+    background-color: white;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.bloco-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bloco:hover {
+    border: 1px solid rgb(251,86,48);
+
+}
+
+.bloco img{
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin: 0 auto;
+
+}
+
+.Titulo{
+    max-width: 100%;
+    font-size: 10px;
+    margin-top: 1%;
+    
+}
+
+.Subtitulo1{
+    max-width: 100%;
+    font-size: 10px;
+    margin-top: 10%;
+    margin-bottom: 5px;
+    
+}
+
+.paragrafo-bloco1{
+    font-size: 10px;
+    color: gray;
+    margin-left: 5px;
+}
+
+.paragrafo-bloco2{
+    font-size: 10px;
+    color: gray;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+.Subtitulo2{
+    max-width: 100%;
+    font-size: 10px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+.preco-qtd {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: auto; 
+    width: 100%;
+}
+
+.preco-produto {
+    color: rgb(251,86,48);
+    font-size: 10px;
+    margin: 0;
+}
+
+.qtd {
+    font-size: 10px;
+    color: gray;
+    margin: 0;
+}
+
+.rodape{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(230, 230, 230);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.atendimento-cliente{
+    flex: 1;
+    min-width: 180px;
+}
+
+.atendimento-cliente h4{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 5px;
+}
+
+.atendimento-cliente ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+   
+}
+
+.atendimento-cliente ol li{
+    margin: 0 10px;
+}
+
+.pagamentos img{
+    height: 20px;
+    margin: 5px;
+}
+
+.social img{
+    height: 25px;
+    margin: 4px;
+    
+   
+}
+
+.qrcode{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.apps img{
+  display: block;
+  margin-bottom: 20px;
+   
+}
+
+.linha{
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    font-size: 12px;
+    color: gray;
+    width: 1000px;
+    margin: 60px auto;
+}

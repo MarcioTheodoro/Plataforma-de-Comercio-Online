@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="/estilização/style.css">
+    <script type="text/javascript" src="/script.js"></script>
     <title>Document</title>
 <body>
     <header>
@@ -15,27 +15,27 @@
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Cadastro Cliente</a></li>
-            <li><a href="">Cadastro Funcionario</a></li>
+            <li><a href="">Cadastro Funcionário</a></li>
             <li><a href="">Cadastro Produto</a></li>
             <li><a href="">Ver Clientes</a></li>
             <li><a href="">Ver Funcionários</a></li>
-            <li><a href="">Ver Produtos</a></li>
+            <li><a href="ver_produtos.html">Ver Produtos</a></li>
         </ul>
     </nav>
-      <div class="produto-imagem">
-        <div class="produto-miniatura">
-            <img src="img/produto1.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto2.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto3.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto4.png" onclick="selecionarImgProduto(this)">
-            <img src="img/produto5.png" onclick="selecionarImgProduto(this)">
-        </div>
-        <div class="produto-principal">
-            <img id="imgPrincipal" src="img/produto1.png">
-        </div>
-    </div>
+      <section class="produto-imagem">
+        <section class="produto-miniatura">
+            <img src="/img/produto1.png" onclick="selecionarImgProduto(this)">
+            <img src="/img/produto2.png" onclick="selecionarImgProduto(this)">
+            <img src="/img/produto3.png" onclick="selecionarImgProduto(this)">
+            <img src="/img/produto4.png" onclick="selecionarImgProduto(this)">
+            <img src="/img/produto5.png" onclick="selecionarImgProduto(this)">
+        </section>
+        <section class="produto-principal">
+            <img id="imgPrincipal" src="/img/produto1.png">
+        </section>
+    </section>
 
-    <div class="produto-detalhes">
+    <section class="produto-detalhes">
         <h1>Camisa Desenvolvedor Front-End CSS</h1>
         <h2 id="precoProduto">R$56,90</h2>
         <p id="qtdDisponivel" >171 peças dísponíveis</p>
@@ -47,13 +47,13 @@
         <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
 
         <p>Tamanhos:</p>
-        <button class="botao" id="btnTamanhoP">P</button>
-        <button class="botao" id="btnTamanhoM">M</button>
-        <button class="botao" id="btnTamanhoG">G</button>
-        <button class="botao" id="btnTamanhoGG">GG</button>
+        <button class="botao" id="btnTamanhoP" onclick="mudarTamanho(this)">P</button>
+        <button class="botao" id="btnTamanhoM"onclick="mudarTamanho(this)">M</button>
+        <button class="botao" id="btnTamanhoG"onclick="mudarTamanho(this)">G</button>
+        <button class="botao" id="btnTamanhoGG"onclick="mudarTamanho(this)">GG</button>
         <p id="tamanhoSelecionado" >Tamanho Selecionado: P</p>
         <button id="botaoComprar">Comprar Agora</button>
-    </div>
+    </section>
     
 </body>
 </html>
