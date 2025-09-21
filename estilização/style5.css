@@ -71,126 +71,81 @@ body{
 
 .bloco-principal{
     background-color: white;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
     border: 1px solid #ccc;
-    width: 1000px;
-    
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bloco-principal h3{
-    grid-column: 1/-1;
     text-align: center;
     margin-bottom: 10px;
     color: rgb(251,86,48);
 }
 
-
-
-.bloco{
-    background-color: white;
-    padding: 20px;
-    width: 150px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+.formulario{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
-    cursor: pointer;
-
-}
-
-.bloco-link{
-    text-decoration: none;
-    color: inherit;
-}
-
-.bloco:hover {
-    border: 1px solid rgb(251,86,48);
-
-}
-
-.bloco img{
-    max-width: 100%; 
-    height: auto;    
-    display: block;  
-    margin: 0 auto;
-
-}
-
-.Titulo{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 1%;
-    
-}
-
-.Subtitulo1{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 10%;
-    margin-bottom: 5px;
-    
-}
-
-.paragrafo-bloco1{
-    font-size: 10px;
-    color: gray;
-    margin-left: 5px;
-}
-
-.paragrafo-bloco2{
-    font-size: 10px;
-    color: gray;
-    text-align: justify;
-    margin-left: 5px;
-}
-
-.Subtitulo2{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 5%;
-    margin-bottom: 10px;
-}
-
-.preco-qtd {
-    display: flex;
-    justify-content: space-between; 
+    gap: 15px;
+    width: auto;
     align-items: center;
-    margin-top: auto; 
-    width: 100%;
+    
 }
 
-.preco-produto {
-    color: rgb(251,86,48);
-    font-size: 10px;
-    margin: 0;
+.formulario label{
+    font-weight: bold;
+    color: #222;
+    display: none;
 }
 
-.qtd {
-    font-size: 10px;
-    color: gray;
-    margin: 0;
+.formulario input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-left: 75px;
+}
+
+.Confirmar{
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(251,86,48);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.Confirmar:hover{
+    background-color: black;
 }
 
 .rodape{
     width: 100%;
-    padding: 10px 0;
     background-color: rgb(230, 230, 230);
+    padding: 10px 0;
+    
 }
 
 .container{
+    max-width: 1000px;
     width: 90%;
-    max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
     width: 1000px;
-    margin: 0 auto;
+    
 }
 
 .atendimento-cliente{
@@ -200,8 +155,8 @@ body{
 
 .atendimento-cliente h4{
     font-size: 14px;
-    margin-bottom: 10px;
     font-weight: bold;
+    margin-bottom: 10px;
     color: #222;
     margin-top: 50px;
 }
@@ -247,6 +202,6 @@ body{
     margin-top: 40px;
     font-size: 12px;
     color: gray;
-    width: 1000px;
+    max-width: 1000px;
     margin: 60px auto;
 }

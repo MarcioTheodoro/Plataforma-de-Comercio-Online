@@ -99,7 +99,6 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    cursor: pointer;
 
 }
 
@@ -114,25 +113,20 @@ body{
 }
 
 .bloco img{
-    max-width: 100%; 
+    max-width: 100px; 
     height: auto;    
     display: block;  
     margin: 0 auto;
+    margin-bottom: 10px;
 
 }
 
-.Titulo{
+
+.Subtitulo1, .Subtitulo2{
     max-width: 100%;
     font-size: 10px;
     margin-top: 1%;
-    
-}
-
-.Subtitulo1{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 10%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     
 }
 
@@ -147,13 +141,6 @@ body{
     color: gray;
     text-align: justify;
     margin-left: 5px;
-}
-
-.Subtitulo2{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 5%;
-    margin-bottom: 10px;
 }
 
 .preco-qtd {

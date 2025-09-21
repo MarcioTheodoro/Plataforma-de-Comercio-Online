@@ -75,10 +75,9 @@ body{
     padding: 20px;
     border: 1px solid #ccc;
     width: 1000px;
-    
     margin: auto;
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
 }
 
 .bloco-principal h3{
@@ -93,19 +92,54 @@ body{
 .bloco{
     background-color: white;
     padding: 20px;
-    width: 150px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
     cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 0;
 
 }
 
-.bloco-link{
-    text-decoration: none;
-    color: inherit;
+.bloco input[type="checkbox"]{
+    display: none;
+}
+
+.bloco input[type="checkbox"]:checked + label{
+    border: 2px solid rgb(251,86,48);
+}
+
+.conteudo-bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    flex: 1;
+    align-items: flex-start;
+    
+}
+
+.conteudo-bloco p{
+    color: gray;
+}
+
+label img{
+    max-width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.bloco label{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
 
 .bloco:hover {
@@ -114,72 +148,37 @@ body{
 }
 
 .bloco img{
-    max-width: 100%; 
+    max-width: 100px; 
     height: auto;    
     display: block;  
-    margin: 0 auto;
-
-}
-
-.Titulo{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 1%;
-    
-}
-
-.Subtitulo1{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 10%;
-    margin-bottom: 5px;
-    
-}
-
-.paragrafo-bloco1{
-    font-size: 10px;
-    color: gray;
-    margin-left: 5px;
-}
-
-.paragrafo-bloco2{
-    font-size: 10px;
-    color: gray;
-    text-align: justify;
-    margin-left: 5px;
-}
-
-.Subtitulo2{
-    max-width: 100%;
-    font-size: 10px;
-    margin-top: 5%;
+    margin: 0;
     margin-bottom: 10px;
+    flex-shrink: 0;
+
 }
 
-.preco-qtd {
-    display: flex;
-    justify-content: space-between; 
+.Confirmar{
+    margin: auto;
+    padding: 10px;
     align-items: center;
-    margin-top: auto; 
-    width: 100%;
+    background-color: rgb(251,86,48);
+    color: white;
+    grid-column: 1/-1;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+
 }
 
-.preco-produto {
-    color: rgb(251,86,48);
-    font-size: 10px;
-    margin: 0;
-}
-
-.qtd {
-    font-size: 10px;
-    color: gray;
-    margin: 0;
+.Confirmar:hover{
+    background-color: black;
 }
 
 .rodape{
     width: 100%;
     padding: 10px 0;
     background-color: rgb(230, 230, 230);
+    
 }
 
 .container{
