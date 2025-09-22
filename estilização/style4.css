@@ -50,17 +50,17 @@ header img{
 }
 
 .menu ul li a{
-    font-size: 20px;
+    font-size: 13px;
     color:white;
     text-align: center;
     text-decoration: none;
     padding: 15px;
     display: block;
+    margin-left: 5px;
     
 }
 
 .menu ul li a:hover{
-    font-weight: bold;
     color: rgb(251,86,48);
     background-color: white;
 }
