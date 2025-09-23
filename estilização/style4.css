@@ -9,8 +9,36 @@ header{
     height: 85px;
     width: 100%;
     background-color: rgb(251,86,48);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-    
+header a {
+    text-decoration: none;
+    color: rgb(251,86,48);
+}
+
+.header-itens{
+    display: flex;
+    align-items: center;
+}
+
+.header-itens a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10%;
+    font-weight: 500;
+}
+
+header.pagina-invertida{
+    background-color: whitesmoke;
+}
+
+h1.pagina-invertida{
+    color: rgb(251,86,48);
+    font-size: 20px;
+    font-weight: 780;
 }
 
 header h1{
@@ -67,6 +95,60 @@ header img{
 
 body{
     background-color: rgb(184, 184, 184);
+}
+
+body.pagina-invertida{
+    background-color: rgb(251,86,48);
+}
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.formulario{
+    background-color: white;
+    border-radius: 4px;
+    padding: 4%;
+    padding-top: 2%;
+}
+
+.formulario h3{
+    text-align: center;
+}
+
+.formulario input{
+    width: 92%;
+    margin: 7%;
+    margin-left: 0%;
+    padding: 4%;
+    border: 1px solid #bbb;
+}
+
+.formulario-botao{
+    width: 100%;
+    padding: 2%;
+    color: white;
+    background-color: rgb(251,86,48);
+    margin-bottom: 5%;
+}
+
+.links-formulario{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.links-formulario a {
+    text-decoration: none;
+}
+
+.formulario hr{
+    display: flex;
+    margin-bottom: 7%;
+    width: 50%;
 }
 
 .bloco-principal{
