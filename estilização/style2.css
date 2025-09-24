@@ -26,6 +26,10 @@ header h2{
    color: white;
 }
 
+header h2 a{
+    text-decoration: none;
+    color: white;
+}
 
 header img{
     height: 60px;
