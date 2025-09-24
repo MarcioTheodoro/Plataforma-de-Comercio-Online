@@ -151,7 +151,42 @@ body.pagina-invertida{
     align-items: center;
     gap: 10px;
     margin: 20px, 0;
-    width: 100%;
+    margin-bottom: 8%;
+}
+
+#hr{
+    width: 45%;
+}
+
+.botoes-formulario{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes-formulario img{
+    width: 25%;
+    margin-right: 6%;
+}
+
+.botoes-formulario button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid 2px gainsboro;
+    padding: 2%;
+}
+
+.formulario-rodape{
+    color: #bbb;
+    text-align: center;
+    margin-top: 7%;
+    font-weight: 545;
+}
+
+.formulario-rodape a{
+    text-decoration: none;
+    color: rgb(251,86,48);
 }
 
 .bloco-principal{
