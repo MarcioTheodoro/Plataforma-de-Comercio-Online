@@ -146,10 +146,12 @@ body.pagina-invertida{
     text-decoration: none;
 }
 
-.formulario hr{
+.divisor{
     display: flex;
-    margin-bottom: 7%;
-    width: 50%;
+    align-items: center;
+    gap: 10px;
+    margin: 20px, 0;
+    width: 100%;
 }
 
 .bloco-principal{
