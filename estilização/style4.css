@@ -98,6 +98,10 @@ body{
     background-color: rgb(184, 184, 184);
 }
 
+body.pagina-branca{
+    background-color: white;
+}
+
 body.pagina-invertida{
     background-color: rgb(251,86,48);
 }
@@ -114,6 +118,7 @@ body.pagina-invertida{
     border-radius: 4px;
     padding: 4%;
     padding-top: 2%;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .formulario h3{
@@ -144,6 +149,33 @@ body.pagina-invertida{
 
 .links-formulario a {
     text-decoration: none;
+}
+
+#formulario-com-seta{
+    background-color: white;
+    width: 40%;
+    margin: 8%;
+    padding: 1%;
+    border-radius: 4px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-com-seta h3{
+    text-align: center;
+}
+
+#formulario-com-seta input{
+    width: 86%;
+    margin: 10%;
+    margin-left: 5%;
+    padding: 2%;
+    border: 1px solid #bbb;
+}
+
+#formulario-com-seta button{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }
 
 .divisor{
