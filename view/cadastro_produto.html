@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilização/style4.css">
-    <title>Cupons</title>
+    <title>Cadastrar</title>
 </head>
 <body>
     <header>
@@ -16,10 +16,10 @@
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
-            <li><a href="">Cadastro Funcionário</a></li>
-            <li><a href="">Cadastro Produto</a></li>
+            <li><a href="cadastro_funcionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastro_produto.html">Cadastro Produto</a></li>
             <li><a href="cadastro_loja.html">Cadastro Lojas</a></li>
-            <li><a href="">Cadastro Cupom</a></li>
+            <li><a href="cadastro_cupom.html">Cadastro Cupom</a></li>
             <li><a href="ver_clientes.html">Ver Clientes</a></li>
             <li><a href="ver_funcionarios.html">Ver Funcionários</a></li>
             <li><a href="ver_loja.html">Ver Lojas</a></li>
@@ -27,68 +27,27 @@
             <li><a href="ver_produtos.html">Ver Produtos</a></li>
         </ul>
     </nav>
-        <section>
-            <section class="bloco-principal">
-                <h3>Cupons</h3>
-            <section class="bloco">
-                <input type="checkbox"  id="cupom1">
-                <label for="cupom1">
-                    <img src="/img/cupom.png" alt="">
-                        <section class="conteudo-bloco">
-                            <p>Cupom de 50% de desconto nos produtos da loja</p>
-                        </section>
-                </label>
+    <section class="mid-section">
+        <section class="formulario-interno">
+            <h3 class="h3-laranja">Cadastrar Produto</h3>
+            <form action="home.html">
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+                <input type="text" id="fabricante" name="fabricante" placeholder="Fabricante">
+                <input type="text" id="descricao" name="descricao" placeholder="Descrição">
+                <input type="number" id="valor" name="valor" placeholder="Valor">
+                <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade">
+                <section class="links-formulario">
+                    <p class="p-laranja">Selecionar foto do produto:</p>
                 </section>
-                <section class="bloco">
-                <input type="checkbox"  id="cupom2">
-                <label for="cupom2">
-                    <img src="/img/cupom.png" alt="">
-                        <section class="conteudo-bloco">
-                            <p>Cupom de 75% de desconto nos produtos da loja</p>
-                        </section>
-                </label>
-                </section>
-                <section class="bloco">
-                <input type="checkbox"  id="cupom3">
-                <label for="cupom3">
-                    <img src="/img/cupom.png" alt="">
-                        <section class="conteudo-bloco">
-                            <p>Cupom de 25% de desconto nos produtos da loja</p>
-                        </section>
-                </label>
-                </section>
-                <section class="bloco">
-                <input type="checkbox"  id="cupom4">
-                <label for="cupom4">
-                    <img src="/img/frete.png" alt="">
-                        <section class="conteudo-bloco">
-                            <p>Frete Grátis para qualquer região</p>
-                        </section>
-                </label>
-                </section>
-                <section class="bloco">
-                <input type="checkbox"  id="cupom5">
-                <label for="cupom5">
-                    <img src="/img/frete.png" alt="">
-                        <section class="conteudo-bloco">
-                            <p>Cupom de 50% de desconto de Frete</p>
-                        </section>
-                </label>
-                </section>
-                <section class="bloco">
-                <input type="checkbox"  id="cupom6">
-                <label for="cupom6">
-                    <img src="/img/frete.png" alt="">
-                        <section class="conteudo-bloco">
-                            <p>Cupom de 25% de desconto de Frete</p>
-                        </section>
-                </label>
-                </section>
-                <button class="Confirmar" onclick="alert('Cupons aplicados com sucesso!')"><strong>APLICAR</strong></button>
-            </section>  
-            </section>
+                    <label for="fileInput" class="label-botao">
+                        Escolher arquivo
+                        <input type="file" id="fileInput" class="file-input">
+                    </label>
+                    Nenhum arquivo escolhido
+                <button type="submit" class="formulario-interno-botao">CADASTRAR</button>
         </section>
-    <footer>
+    </section>
+     <footer>
         <section class="rodape">
             <section class="container">
                 <section class="atendimento-cliente">

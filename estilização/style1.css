@@ -22,11 +22,16 @@ header h1{
 
 header h2{
    display: inline;
-   margin-left: 1000px;
+   margin-left: 85%;
    color: white;
 }
 
 header h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+header h2 a:hover{
     text-decoration: none;
     color: white;
 }
@@ -75,19 +80,70 @@ body{
     background-color: rgb(184, 184, 184);
 }
 
+body.pagina-branca{
+    background-color: white;
+}
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#carrossel-promocoes{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    width: 100%;
+}
+
+.carousel-inner img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+#imagem-home{
+    display: flex;
+    justify-content: center;
+}
+
+#imagem-home img{
+    width: 60%;
+    height: 100%;
+    margin-left: 4.5%;
+    margin-bottom: 2%;
+}
+
 .bloco-principal{
     background-color: white;
     gap: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     width: 1000px;
-    
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+}
+
+.bloco-principal-home{
+    background-color: white;
+    gap: 10px;
+    padding: 20px;
+    border-top: 1px solid rgb(251,86,48);
+    width: 60%;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
 }
 
 .bloco-principal h3{
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(251,86,48);
+}
+
+#descobertas-do-dia p{
     grid-column: 1/-1;
     text-align: center;
     margin-bottom: 10px;
@@ -106,7 +162,18 @@ body{
     justify-content: flex-start;
     position: relative;
     cursor: pointer;
+}
 
+.bloco-home{
+    background-color: white;
+    padding: 20px;
+    width: 101%;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
 }
 
 .bloco-link{
